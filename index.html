@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Domingues - Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="lista">
+            <ul>
+                <li><a href="#caixa"><strong>Sobre mim</strong></a></li>
+                <li><a href="#caixa2"><strong>Skills</strong></a></li>
+                <li><a href="#divider2"><strong>Projetos</strong></a></li>
+                <li><a href="#sectionContato"><strong>Contato</strong></a></li>
+            </ul>
+        </div>
+        <div id="language-dropdown">
+            <button id="language-btn">
+                <img id="mundo" src="imagens/iconeMundo.png" alt="">
+                <strong>pt</strong>
+                <img id="seta" src="imagens/seta.png" alt="">
+            </button>
+            <div id="dropdown-content">
+                <a href="index.html" onclick="changeLanguage('pt')">Português</a>
+                <a href="index-en.html">English</a>
+            </div>
+        </div>
+        <a id="btnCurriculo" href="CURRÍCULO GUILHERME DOMINGUES.pdf" target=_blank><strong>Meu currículo</strong></a>
+        <img id="escuro" src="imagens/Moon.png" alt="" onclick="darkmodeToggle()">
+    </header>
+
+    <main id="ola">
+        <strong>
+            <p>Olá! Eu sou o Guilherme!</p>
+        </strong>
+    </main>
+
+    <div id="caixa">
+        <nav>
+            <img src="imagens/profile.jfif" alt="Foto de Perfil">
+            <p><strong>Sobre mim</strong></p>
+            <span>Sou desenvolvedor full stack apaixonado por tecnologia e pela criação de soluções inteligentes. Tenho
+                experiência em diversas etapas do desenvolvimento de software, desde a modelagem de sistemas até a
+                entrega de produtos funcionais e bem estruturados. Gosto de desafios que exigem lógica, aprendizado
+                contínuo e visão de produto. Meu foco é evoluir constantemente como profissional, buscando qualidade,
+                desempenho e inovação em cada projeto que construo.
+            </span>
+        </nav>
+        <div id="divider"></div>
+        <main id="expirencias">
+            <p><strong>Experiências / Formação</strong></p>
+        </main>
+        <div class="experiencia-container">
+            <div id="ano">
+                <p><strong>2024 / 2026</strong></p>
+            </div>
+            <div id="descricao">
+                <p>Cursando o Ensino Médio no Colégio Cotemig.
+                    Atuo em projetos práticos com Front-End (HTML, CSS e JavaScript) e Back-End (C#), desenvolvendo
+                    lógica, trabalho em equipe e pensamento analítico.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="caixa2">
+        <div class="skills-section">
+            <p id="h1Skills"><strong>Skills</strong></p>
+            <ul id="skills">
+                <li><img src="imagens/csharpIcon.png" alt="C# Icon"></li>
+                <li><img src="imagens/MySQLIcon.png" alt="MySQL Icon"></li>
+                <li><img src="imagens/HTMLIcon.png" alt="HTML Icon"></li>
+                <li><img src="imagens/CSSIcon.png" alt="CSS Icon"></li>
+                <li><img src="imagens/JavascriptIcon.png" alt="Javascript Icon"></li>
+            </ul>
+        </div>
+        <div id="divider2"></div>
+        <div id="projetos-section">
+            <p id="h1Projetos"><strong>Projetos</strong></p>
+            <p id="github">Acesse todos os meus projetos disponíveis no Github</p>
+            <a id="btnGithub" href="https://github.com/guilhermedomingues-dev" target="_blank"><img
+                    src="imagens/githubIcon.png" alt="Github Icon"></a>
+        </div>
+    </div>
+    <div id="sectionContato">
+        <dialog id="dialog">
+            <form action="https://formsubmit.co/guilherme.ldomingues@gmail.com" method="POST">
+                <h1>Entre em contato</h1>
+                <input id="nome" type="text" placeholder="Seu nome" required>
+                <input id="email" type="email" placeholder="Seu email" required><br>
+                <input id="mensagem" type="text" placeholder="Sua mensagem" required><br>
+                <input id="btnSub" type="submit">
+            </form>
+            <button id="fechar" onclick="fechar()">Fechar</button>
+        </dialog>
+        <div id="contato">
+            <p id="h1Contato"><strong>Contatos</strong></p>
+            <div class="parent">
+                <div class="div1">
+                    <img src="imagens/emailIcon.png" alt="">
+                    <div class="div2">
+                        <p onclick="abrir()">guilherme.ldomingues@gmail.com</p>
+                    </div>
+                </div>
+                <div class="div3">
+                    <img src="imagens/telefoneIcon.png" alt="">
+                    <p class="div4">(31) 98116-5880</p>
+                </div>
+            </div>
+        </div>
+        <div id="divider3"></div>
+        <div id="Social">
+            <p id="h1Contato"><strong>Social</strong></p>
+            <div class="div5">
+                <a class="div6" href="https://github.com/guilhermedomingues-dev" target="_blank">Github</a>
+                <img src="imagens/githubIcon2.png" alt="">
+            </div>
+            <div class="div7">
+                <a class="div8" href="" target="_blank">LinkedIn</a>
+                <img src="imagens/linkedinIcon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;Guilherme Domingues - 2025</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
